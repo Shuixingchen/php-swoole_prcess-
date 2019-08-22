@@ -91,7 +91,7 @@ class Daemon
      */
     public static function start_tasks()
     {
-        self::register_signal();
+        self::register_signal();//有这个监听，所有主进程会一直运行
         self::get_pid();
         self::write_pid();
         (new DaemonWorker())->create_process();
