@@ -2,7 +2,7 @@
 /**
  * 任务文件
  */
-class EmailTask
+class EmailTask implatement Task
 {
 	public $member='email';
 	public function invoke(){
